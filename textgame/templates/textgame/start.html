@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static 'textgame/css/startmenu.css' %}">
+        <style>
+            body {
+                background-image: url('{% static 'textgame/img/startmenu.jpg' %}');
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        </style>
+        <h1>Welcome to Weatherscape! Start new game or load existing game</h1>
+    </head>
+    <ul>
+        <li> 
+            <a href="/create/"> 
+                <p class="choice"> Start new game </p> 
+            </a> 
+        </li>
+        <li> 
+            <a href="/load/"> 
+                <p class="choice"> Load game </p> 
+            </a> 
+        </li>
+    </ul>
+</html>

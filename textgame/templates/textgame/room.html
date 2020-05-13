@@ -1,0 +1,212 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static 'textgame/css/generic.css' %}">
+        <style>
+            body {
+            background-image: url('{% static '' %}{{room.room_back}}');
+            background-repeat: no-repeat;
+            background-size: cover;
+            }
+        </style>
+        <p class="desc"> Current Weather: {{weather}} </p>
+        <h1>{{room.room_name}}</h1>
+
+        {% if room.room_type == 1 or room.room_type == 2%}
+            <p class="desc">{{room.room_desc}}</p>
+        {% endif %}
+
+        {% if room.room_type == 11%} {% comment %} Movie Theatre {% endcomment%}
+            {% if weather == "Rainy"%}  
+            <li>
+                 <p class="desc">{{room.room_desc_alt}}</p>
+            </li>
+            {% endif %}
+
+            {% if weather != "Rainy" %}  
+            <li>
+                <p class="desc">{{room.room_desc}}</p>
+            </li>
+            {% endif %} 
+        {% endif %}
+
+        {% if room.room_type == 12%} {% comment %} Empty Room {% endcomment%}
+            {% if weather == "Bad Weather"%}  
+            <li>
+                 <p class="desc">{{room.room_desc_alt}}</p>
+            </li>
+            {% endif %}
+
+            {% if weather != "Bad Weather" %}  
+            <li>
+                <p class="desc">{{room.room_desc}}</p>
+            </li>
+            {% endif %} 
+        {% endif %}
+
+        {% if room.room_type == 13%} {% comment %} Bridge Over Pit {% endcomment%}
+            {% if weather == "Sunny"%}  
+            <li>
+                 <p class="desc">{{room.room_desc_alt}}</p>
+            </li>
+            {% endif %}
+
+            {% if weather != "Sunny" %}  
+            <li>
+                <p class="desc">{{room.room_desc}}</p>
+            </li>
+            {% endif %} 
+        {% endif %}
+    </head>
+
+    <body>
+    <ul>
+        {% if room.room_type == 1%}
+            {% comment %} if the room has 3 options besides back (left, forward, right) {% endcomment %}
+            {% if room.room_choiceCount == 3%}
+            <li>
+                <a href={{room.room_c1_a}}>
+                    <p class="choice">{{room.room_c1}}</p>
+                </a>
+            </li>
+            <li>
+                <a href={{room.room_c2_a}}>
+                    <p class="choice">{{room.room_c2}}</p>
+                </a>
+            </li>
+            <li>
+                <a href={{room.room_c3_a}}>
+                    <p class="choice">{{room.room_c3}}</p>
+                </a>
+            </li>
+
+                {% comment %} this is the choice to go back to previous room {% endcomment %}
+                {% if room.room_name != "Starting Room" and room.room_name != "Prison" %}
+                <li>
+                    <a href="#">
+                        <p onclick="window.history.go(-1)"; class="choice"> Go back </p>
+                    </a>
+                </li>
+                {% endif %}
+
+            {% endif %}
+
+
+            {% comment %} if the room has 2 options besides back () {% endcomment %}
+            {% if room.room_choiceCount == 2%}
+            <li>
+                <a href={{room.room_c1_a}}>
+                    <p class="choice">{{room.room_c1}}</p>
+                </a>
+            </li>
+            <li>
+                <a href={{room.room_c2_a}}>
+                    <p class="choice">{{room.room_c2}}</p>
+                </a>
+            </li>
+
+                {% comment %} this is the choice to go back to previous room {% endcomment %}
+                {% if room.room_name != "Starting Room" and room.room_name != "Prison"%}
+                <li>
+                    <a href="#">
+                        <p onclick="window.history.go(-1)"; class="choice"> Go back </p>
+                    </a>
+                </li>
+                {% endif %}
+
+            {% endif %}
+
+
+            {% comment %} if the room only has one option besides back {% endcomment %}
+            {% if room.room_choiceCount == 1%}
+            <li>
+                <a href={{room.room_c1_a}}>
+                    <p class="choice">{{room.room_c1}}</p>
+                </a>
+            </li>
+
+                {% comment %} this is the choice to go back to previous room {% endcomment %}
+                {% if room.room_name != "Starting Room" and room.room_name != "Prison"%}
+                <li>
+                    <a href="#">
+                        <p onclick="window.history.go(-1)"; class="choice"> Go back </p>
+                    </a>
+                </li>
+                {% endif %}
+
+            {% endif %}
+
+        {% endif %}
+
+
+        {% if room.room_type == 2%}
+
+        <li>
+            <a href={{room.room_c1_a}}>
+                <p class="choice">{{room.room_c1}}</p>
+            </a>
+        </li>
+        {% endif %}
+
+
+
+        {% if room.room_type == 11%} {% comment %} Movie Theatre {% endcomment%}
+            {% if weather == "Rainy"%}  
+            <li>
+                <p class="choice">You won!</p>   
+            </li>
+            {% endif %}
+
+            {% if weather != "Rainy" %}  
+            <li>
+                <a href={{room.room_c1_a}}>
+                    <p class="choice">{{room.room_c1}}</p>
+                </a>
+            </li>
+            {% endif %} 
+        {% endif %}
+
+
+
+        {% if room.room_type == 12%} {% comment %} Empty Room {% endcomment%}
+            {% if weather == "Bad Weather"%}  
+            <li>
+                <p class="choice">You won!</p>   
+            </li>
+            {% endif %} 
+
+            {% if weather != "Bad Weather"%}  
+            <li>
+                <a href="#">
+                    <p onclick="window.history.go(-1)"; class="choice"> Go back </p>
+                </a>
+            </li>
+            {% endif %} 
+        {% endif %}
+
+
+
+        {% if room.room_type == 13%} {% comment %} Bridge Over Pit {% endcomment%}
+            {% if weather == "Sunny"%}  
+            <li>
+                <p class="choice">You won!</p>   
+            </li>
+            {% endif %} 
+
+            {% if weather != "Sunny"%}
+            <li>
+                <a href="#">
+                    <p onclick="window.history.go(-1)"; class="choice"> Go back </p>
+                </a>
+            </li>
+            {% endif %} 
+        {% endif %}
+    </ul>
+    </body>
+    {% comment %} static js  {% endcomment %}
+    {% comment %} <script src="{% static 'dungeon1/stuff.js'%}"></script> {% endcomment %}
+</html>
+
+{% comment %} get css templates {% endcomment %}
+

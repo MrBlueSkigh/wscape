@@ -1,0 +1,73 @@
+h1{
+    background-color:lightblue;
+    border-style: double;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-right: 1px;
+    padding-bottom: 10px;
+    padding-left: 1px;
+    font-weight: bold;
+    font-family: Viner hand itc;
+    word-spacing: 5px;
+    text-align: center;
+
+}
+p.desc {
+    font-family: Viner hand itc;
+    font-size: 22px;
+    font-color: Black;
+    word-spacing: 5px;
+    background-color:#7ffbff;
+    border-style: solid;
+    border-color: Black;
+    border-radius: 2px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    text-align: center;
+    font-weight: bold;	
+    opacity: 0.8;	
+}
+p.choice {
+    font-family: Viner hand itc;
+    font-size: 22px;
+    font-color: Black;
+    word-spacing: 5px;
+    background-color:#ffa17f;
+    border-style: solid;
+    border-color: Black;
+    border-radius: 2px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    text-align: center;
+    font-weight: bold;
+    opacity: 0.8;		
+}
+a:link {
+    color: black;
+    text-decoration: none;
+}
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+    color: light grey;
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
