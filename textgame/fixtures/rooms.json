@@ -1,0 +1,298 @@
+[
+    {
+        "model": "textgame.room",
+        "pk": 1,
+        "fields": {
+            "room_name": "Starting Room",
+            "room_desc": "You are in an empty room. You see a note on the floor and decide to read it. “Welcome to Weatherscape! I am the master of this dungeon and you are trespassing. Well, since you’re here, might as well have some fun with it. Try to find your way out if you dare. Oh and do watch out for the terrible weather conditions. They may be similar to the ones you’re experiencing right now… Good luck. You’ll need it.",
+            "room_c1": "There is a sign that says 'Exit' on a door to your left and a faint scent of fish coming from it",
+            "room_c2": "There is a sign that says 'Exit' on a door straight ahead and a faint scent of metal",
+            "room_c3": "There is a sign that says 'Exit' on a door to your right with a scent of stale air",
+            "room_c1_a": "/2/",
+            "room_c2_a": "/3/",
+            "room_c3_a": "/4/",
+            "room_choiceCount": 3,
+            "room_type": 1,
+            "room_desc_alt": "",
+            "room_back":"textgame/img/StartingRoom.jpg"
+            
+        }
+    },
+    {
+        "model": "textgame.room",
+        "pk": 2,
+        "fields": {
+            "room_name": "Lake",
+            "room_desc": "You have come across a gigantic lake. The waters are far too dangerous to swim across.",
+            "room_c1": "To your Left you see a patchy Boat that might be able to make it across",
+            "room_c2": "To you right you see a water well along the shore of the lake",
+            "room_c3": "",
+            "room_c1_a": "/16/",
+            "room_c2_a": "/11/",
+            "room_c3_a": "#",
+            "room_choiceCount": 2,
+            "room_type": 1,
+            "room_desc_alt": "",
+            "room_back":"textgame/img/Lake.jpg"        }
+    },
+    {
+        "model": "textgame.room",
+        "pk": 3,
+        "fields": {
+            "room_name": "Armory",
+            "room_desc": "You enter a room that’s filled with weapons and armor. You see crossbows, swords, spears, and other sorts of weaponry. You can see that there are two exits.",
+            "room_c1": "You see a dark empy hallway to your left guarded by a suit of armor",
+            "room_c2": "the door to your right seems to be an exit to this weaponry room",
+            "room_c3": "",
+            "room_c1_a": "/4/",
+            "room_c2_a": "/6/",
+            "room_c3_a": "#",
+            "room_choiceCount": 2,
+            "room_type": 1,
+            "room_desc_alt": "",
+            "room_back":"textgame/img/armory.jpg"            
+        }
+    },
+    {
+        "model": "textgame.room",
+        "pk": 4,
+        "fields": {
+            "room_name": "Hallway",
+            "room_desc": "You enter into a hallway. There are no lights anywhere to be seen and the walls have many pictures of the same figure: an old man with a long white beard and no hair. This figure is in different poses in each painting. One has him on a horse, one he is sitting on a throne, another has him building some sort of house. The walls seem to have a lot of wear and tear, as if there is a lot of foot traffic coming through this area. You can see two exits at the end of the hall. ",
+            "room_c1": "The first door has the sound of smash mouth coming from within",
+            "room_c2": "The second door is extremely quiet, so quiet it mesmerizes you",
+            "room_c3": "",
+            "room_c1_a": "/14/",
+            "room_c2_a": "/12/",
+            "room_c3_a": "#",
+            "room_choiceCount": 2,
+            "room_type": 1,
+            "room_desc_alt": "",
+            "room_back":"textgame/img/hallway.jpg"            
+        }
+    },
+    {
+        "model": "textgame.room",
+        "pk": 5,
+        "fields": {
+            "room_name": "Cavern",
+            "room_desc": "You have entered a Minecraft-esque themed cave, to your left you see a strip mine with a sign saying: 'Server rules: NO STRIP MINING', to the right you see an opening that leads to a forest of some sorts.",
+            "room_c1": "Try and strip mine your way out",
+            "room_c2": "Journey through the cave opening into the forest",
+            "room_c3": "",
+            "room_c1_a": "/10/",
+            "room_c2_a": "/6/",
+            "room_c3_a": "#",  
+            "room_choiceCount": 2,
+            "room_type": 1,
+            "room_desc_alt": "",
+            "room_back":"textgame/img/Cavern.jpg"        }
+    },
+    {
+        "model": "textgame.room",
+        "pk": 6,
+        "fields": {
+            "room_name": "Forest",
+            "room_desc": "You find yourself in a large forest. You can tell that these trees around you are Aspen trees by the way that they are. It is far too dense to be able to see any exit. You start to wander around the forest. In which direction do you wander? ",
+            "room_c1": "Wander in the darkest direction",
+            "room_c2": "Wander in the direction that seems to go up hill",
+            "room_c3": "Wander aimlessly",   
+            "room_c1_a": "/4/",
+            "room_c2_a": "/13/",
+            "room_c3_a": "/8/",
+            "room_choiceCount": 3,
+            "room_type": 1,
+            "room_desc_alt": "",
+            "room_back":"textgame/img/darkforest.jpg"            
+         
+        }
+    },
+    {
+        "model": "textgame.room",
+        "pk": 7,
+        "fields": {
+            "room_name": "Sacrificial Chamber",
+            "room_desc": "You dozed off and find yourself in a dimly lit chamber. You look around and see there are a few figures in robes further into the room. As you move closer, you can see they are cultists, and they’re mumbling around an altar. There seems to be no exit here",
+            "room_c1": "Become the sacrifice",
+            "room_c2": "",
+            "room_c3": "",
+            "room_c1_a": "/1/",
+            "room_c2_a": "#",
+            "room_c3_a": "#",
+            "room_choiceCount": 1,
+            "room_type": 2,
+            "room_desc_alt": "",
+            "room_back":"textgame/img/SacrificialChamber.jpg"       
+            
+        }
+    },
+    {
+        "model": "textgame.room",
+        "pk": 8,
+        "fields": {
+            "room_name": "Bridge Over Pit",
+            "room_desc": "You come to a rickety, old rope bridge across a large pit that has stalagmites on the bottom of it. You can see the only way out is across this bridge, but you have a gut feeling that says this bridge might collapse under the wrong weather conditions, so you turn around",
+            "room_c1": "",
+            "room_c2": "",
+            "room_c3": "",
+            "room_c1_a": "#",
+            "room_c2_a": "#",
+            "room_c3_a": "#",
+            "room_choiceCount": 0,
+            "room_type": 13,
+            "room_desc_alt": "You cross the rickety old bridge with confidence and escape the maze",
+            "room_back":"textgame/img/PitBridge.jpg"          
+        }
+    },
+    {
+        "model": "textgame.room",
+        "pk": 9,
+        "fields": {
+            "room_name": "Fountain",
+            "room_desc": "You come upon a small area with a fountain full of Sprite Cranberry. It’s extremely fanciful with two baby angels spitting Sprite from atop the fountain into a lower basin, which drains into the bottom basin. You see to your right, a forest that seems to be calling you forwards, from the left your hear a slight creak",
+            "room_c1": "Follow the calls of the forest, and be one with nature...after you try some Sprite Cranberry ",
+            "room_c2": "Follow that creaky sound...after you try some Sprite Cranberry",
+            "room_c3": "",
+            "room_c1_a": "/6/",
+            "room_c2_a": "/8/",
+            "room_c3_a": "#",
+            "room_choiceCount": 2,
+            "room_type": 1,
+            "room_desc_alt": "",
+            "room_back":"textgame/img/Fountain.jpg"          
+          
+        }
+    },
+    {
+        "model": "textgame.room",
+        "pk": 10,
+        "fields": {
+            "room_name": "Prison",
+            "room_desc": "Stop! You violated the law. Serve your life sentence in a cell. Once a week the prison shows movies in the rec room do you go or stay in your cell?",
+            "room_c1": "Go to Movie night",
+            "room_c2": "Stay in your cell and rest the night away",
+            "room_c3": "",
+            "room_c1_a": "/14/",
+            "room_c2_a": "/7/",
+            "room_c3_a": "#",
+            "room_choiceCount": 2,
+            "room_type": 1,
+            "room_desc_alt": "",
+            "room_back":"textgame/img/Prison.jpg"         
+        }
+    },
+    {
+        "model": "textgame.room",
+        "pk": 11,
+        "fields": {
+            "room_name": "Well",
+            "room_desc": "You come across a small area with a well to your left. You look inside and see a tunnel leading out that is just above the current water level, however there is a sign above the well that says: “Branch is still not Rebased, DO NOT ENTER”.  Beyond the fountain you hear the call of the trees.",
+            "room_c1": "Go down the well because you never follow safe programming techniques, in fact, you miss Limewire",
+            "room_c2": "Follow the call of the trees", 
+            "room_c3": "",
+            "room_c1_a": "/10/",
+            "room_c2_a": "/6/",
+            "room_c3_a": "#",
+            "room_choiceCount": 2,
+            "room_type": 1,
+            "room_desc_alt": "",
+            "room_back":"textgame/img/Well.jpg"            
+      
+        }
+    },
+    {
+        "model": "textgame.room",
+        "pk": 12,
+        "fields": {
+            "room_name": "Empty Room",
+            "room_desc": "You come upon a room and it's empty. You can faintly hear something. it's almost as if you hear whispers from the gods themselves, but their voices are too faint to hear. If only the weather made it easier to hear the gods.",
+            "room_c1": "",
+            "room_c2": "",
+            "room_c3": "",
+            "room_c1_a": "#",
+            "room_c2_a": "#",
+            "room_c3_a": "#",
+            "room_choiceCount": 0,
+            "room_type": 12,
+            "room_desc_alt": "The weather is chaotic like the gods, they call upon you, you win",
+            "room_back":"textgame/img/EmptyRoom.jpg"            
+    
+        }
+    },
+    {
+        "model": "textgame.room",
+        "pk": 13,
+        "fields": {
+            "room_name": "Stairwell",
+            "room_desc": "You come upon a stairwell that’s seems out of place. You cannot see the top. You know it leads somewhere, you’re just not sure where. As look around the room, you see pictures of all the rooms you’ve been to with you pondering your choices in them. You think to yourself how creepy it is. This master of the dungeon is weird.",
+            "room_c1": "Ascend the stairs",
+            "room_c2": "Take the escalator, ignoring the stairs",
+            "room_c3": "",
+            "room_c1_a": "/15/",
+            "room_c2_a": "/10/",
+            "room_c3_a": "#",
+            "room_choiceCount": 2,
+            "room_type": 1,
+            "room_desc_alt": "",
+            "room_back":"textgame/img/Staircase.jpg"            
+       
+        }
+    },
+    {
+        "model": "textgame.room",
+        "pk": 14,
+        "fields": {
+            "room_name": "Movie Theatre",
+            "room_desc": "You enter the movie room to find the Bee Movie playing on the screen, your insides burst from mediocrity, you become a bee",
+            "room_c1": "Accept your fate as a bee",
+            "room_c2": "",
+            "room_c3": "",
+            "room_c1_a": "/1/",
+            "room_c2_a": "#",
+            "room_c3_a": "#",
+            "room_choiceCount": 0,
+            "room_type": 11,
+            "room_desc_alt": "You walk in and hear the sound of Smash Mouth. You become giddy with excitement. You become enlightened, you win.",
+            "room_back":"textgame/img/MovieRoom.jpg"           
+         
+        }
+    },
+    {
+        "model": "textgame.room",
+        "pk": 15,
+        "fields": {
+            "room_name": "Dark Room",
+            "room_desc": "You enter the room and there are no lights on. You feel the blissful comfort of one of those serta mattresses from the sheep commercials. Do you sleep or turn around?",
+            "room_c1": "Sleep on the comfort of only 399$, excluding taxes",
+            "room_c2": "",
+            "room_c3": "",
+            "room_c1_a": "/7/",
+            "room_c2_a": "#",
+            "room_c3_a": "#",
+            "room_choiceCount": 1,
+            "room_type": 1,
+            "room_desc_alt": "",
+            "room_back":"textgame/img/DarkRoom.jpg"            
+            
+        }
+    },
+    {
+        "model": "textgame.room",
+        "pk": 16,
+        "fields": {
+            "room_name": "Dock",
+            "room_desc": "As you make your way, you see someone has left their BBQ on the shore unattended so you eat it all before they come back and it makes you thirsty. You could either swin in the lake ahead of you, and drink the water or run to the fountain you see to your left.",
+            "room_c1": "Head towards the fountain full of thirst quenching Sprite Cranberry",
+            "room_c2": "Have a swim in the lake even though you haven’t waited thirty minutes after eating",
+            "room_c3": "",
+            "room_c1_a": "/9/",
+            "room_c2_a": "/10/",
+            "room_c3_a": "#",
+            "room_choiceCount": 2,
+            "room_type": 1,
+            "room_desc_alt": "",
+            "room_back":"textgame/img/dock.jpg"            
+        }
+    }
+
+]
